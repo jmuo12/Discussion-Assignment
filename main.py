@@ -18,12 +18,12 @@ def multi_sort(arr, cmp, method="None"):
 
 # must be in-place sort
 def merge_sort(arr,cmp):
-    if len(m) <= 1:
-        return m
+    if len(arr) <= 1:
+        return arr
 
-    middle = len(m) // 2
-    left = m[:middle]
-    right = m[middle:]
+    middle = len(arr) // 2
+    left = arr[:middle]
+    right = arr[middle:]
 
     left = merge_sort(left)
     right = merge_sort(right)
